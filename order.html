@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<body background="3.png" >
+
+<h2>Order</h2>
+
+<form>
+  City Name*:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+<br>
+  Locality,Area or street*:<br>
+  <input type="text" name="lastname" value="">
+  <br><br>
+   Flat No.,Building Name*:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+<br>
+   PinCode*:<br>
+  <input type="text" name="firstname" value="" min="6">
+  <br>
+<br>
+   State*:<br>
+<form>
+  <select name="State">
+    <option value="Andhra Pradesh">Andhra Pradesh</option>
+    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+    <option value="Assam">Assam</option>
+    <option value="Bihar">Bihar</option>
+<option value="Goa">Goa</option>
+    <option value="Gujarat ">Gujarat </option>
+    <option value="Haryana">Haryana</option>
+    <option value="Himachal Pradesh ">Himachal Pradesh </option>
+<option value="Jammu & Kashmir">Jammu & Kashmir</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Kerala">Kerala</option>
+    <option value="Madhya Pradesh ">Madhya Pradesh </option>
+<option value="Maharashtra">Maharashtra</option>
+    <option value="Manipu">Manipu</option>
+    <option value="Meghalaya ">Meghalaya </option>
+    <option value="Mizoram ">Mizoram </option><option value="volvo">Volvo</option>
+    <option value="Nagaland ">Nagaland </option>
+    <option value="Orissa ">Orissa </option>
+    <option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+    <option value="Sikkim">Sikkim</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+    <option value="West Bengal ">West Bengal</option>
+    <option value="Chhattisgarh">Chhattisgarh</option>
+    <option value="Uttarakhand">Uttarakhand</option>
+<option value="Jharkhand ">Jharkhand </option>
+    <option value="Telangana">Telangana</option>
+  </select>
+  <br>
+</form>
+  <h2>Details</h2>
+   Name*:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+   10-digits mobile number*:<br>
+  <input type="text" name="firstname" value="" mininum="10">
+  <br>
+  <h2>delivery place Address</h2>
+  <form>
+  <input type="radio" name="Address" value="Home(All day delivery)" checked> Home(All day delivery)<br>
+  <input type="radio" name="Address" value="Work(Delivery between 10a.m to 5p.m"> Work(Delivery between 10a.m to 5p.m<br>
+</form>
+<h2> Price Details</h2>
+<p>count Value</p>
+<input type="text" name="Price value" value="">
+<p>Delivery : Free</p>
+<p>Amount Payable :</p>
+<input type="text" name="Amount Payable" value="">
+<h1 style="color:Black;">Payments</h1>
+<form>
+  <input type="radio" name="Purchess" value="Credit/Debit/ATM card" checked>Credit/Debit/ATM card<br>
+  <input type="radio" name="Purchess" value="Phonepe/BHM UPI">Phonepe/BHM UPI<br>
+   <input type="radio" name="Purchess" value="Net Banking">Net Banking<br>
+   <input type="radio" name="Purchess" value="Cash on Delivery">Cash on Delivery<br>
+</form>
+<div>
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+<script>
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+ <p style="text-align:middle;margin-left:45px">
+<button class="popup" onclick="myFunction()"> submit
+ <span class="popuptext" id="myPopup">SUCCESSFULLY Booked!</span>
+</button>
+</body>
+</html>

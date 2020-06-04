@@ -1,0 +1,59 @@
+<HTML><style>p{font-color:orange;}</style>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["d1"].pattern;
+    if (x == "") {
+        alert("enter the first name");
+        return false;
+    }
+    var p = document.forms["myForm"]["d2"].pattern;
+    if(p==""){
+    alert("Enter the last name");
+    return false;
+    }
+	var r = document.forms["myForm"]["d3"].pattern;
+    if(r==""){
+    alert("Enter the valid email");
+    return false;
+    }
+	var s = document.forms["myForm"]["d4"].pattern;
+    if(s==""){
+    alert("Enter the 10 digit number");
+    return false;
+    }
+	var t = document.forms["myForm"]["d5"].pattern;
+    if(t==""){
+    alert("Enter the valid password");
+    return false;
+    }
+	var u = document.forms["myForm"]["d6"].pattern;
+    if(u=""){
+    alert("Enter the confirm password");
+    return false;
+    }
+ if(t=u){
+	alert("its not correct");
+	return false;
+	}
+}
+
+</script>
+<BODY bgcolor="pink" style="background-image:url(c.jpg);"><center>
+<div style="background-color:blue;height:400;width:400">
+<h1><CENTER>SIGN UP </CENTER ></H1>
+ <form action="login.html" name="myForm"  method="post"><center>
+<P>FIRST NAME:<INPUT TYPE="TEXT" name="d1" pattern="[A-Z].{3,}" ></P>
+
+<P>EMAIL   ID:<INPUT id="id1" TYPE="TEXT" name="d3" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" ></P>
+<p>ADDRESS:<input type="textarea"></p>
+<P>CONTACT NO:<INPUT TYPE="TEXT" name="d4" pattern="\d{10}" ></P>
+<P>    GENDER:&emsp;&emsp;<SELECT><OPTION>FEMALE </OPTION><OPTION>MALE</OPTION></SELECT></p>
+
+<P>PASSWORD:<INPUT TYPE="password" name="d5" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></P>
+
+
+<a href="login.html"><input type="submit" onsubmit=" return validateForm()"value="submit"></a>
+
+</center></ForM></div></center>
+</BODY>
+</HTML>
